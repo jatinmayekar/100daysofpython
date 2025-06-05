@@ -29,6 +29,10 @@ print(f"The winner is {index} with a bid of {max_bid} ")
 index, max_bid = max(bid_data.items(), key= lambda items: (items[1], items[0]))
 print(f"The winner is {index} with a bid of {max_bid} ")
 
+index = max(bid_data, key=bid_data.get)
+print(f"The winner is {index} with a bid of {bid_data.get(index)} ")
+
+
 
 
 
